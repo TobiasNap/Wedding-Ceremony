@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Wedding Ceremony</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <style>
+    body {
+      font-family: Georgia, serif;
+      background: #fafafa;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 720px;
+      margin: auto;
+      padding: 24px;
+    }
+    h1, h2 {
+      text-align: center;
+      font-weight: normal;
+    }
+    .language-buttons {
+      text-align: center;
+      margin: 20px 0 30px;
+    }
+    button {
+      font-size: 16px;
+      padding: 8px 14px;
+      margin: 0 6px;
+      border: 1px solid #aaa;
+      background: white;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    button.active {
+      background: #333;
+      color: white;
+    }
+    .lang {
+      display: none;
+    }
+    .lang.active {
+      display: block;
+    }
+    p {
+      line-height: 1.6;
+      font-size: 17px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <h1>Wedding Ceremony</h1>
+  <p style="text-align:center;">Please select your language</p>
+
+  <div class="language-buttons">
+    <button id="btn-en" class="active" onclick="showLang('en')">English</button>
+    <button id="btn-pt" onclick="showLang('pt')">Português</button>
+  </div>
+
+  <!-- ENGLISH -->
+  <div id="en" class="lang active">
+    <h2>English</h2>
+    <p>
+      Dear family and friends,<br><br>
+      Welcome, and thank
